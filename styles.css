@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 50%);
+    overflow-x: ;
+}
+
+#calculator{
+    max-width: 400px;
+    display: grid;
+    align-items: center;
+    justify-content:center;
+    gap: 3px;
+    background-color: black;
+    border-radius: 6px;
+    
+}
+
+#display{
+    height:100%;
+    overflow: hidden;
+    height: 64px;
+    border: none;
+    border-radius: 6px 6px 0px 0px;
+    padding: 20px;
+    font-size: 1rem;
+    color: #fff;
+    outline: none;
+    background-color: rgb(70, 68, 68);
+}
+
+
+
+.buttons{
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    gap: 10px;
+}
+
+button{
+    width: 60px;
+    height: 40px;
+    border: none;
+    border-radius:  50px;
+    background-color: rgb(70, 68, 68);
+    color: #fff;
+    font-size: 16px;
+    cursor:pointer;
+}
+
+
+button:active{
+    background-color:rgb(113, 112, 103) ;
+}
+
+.operator{
+    background-color: orange;
+    font-size: 1.5rem;
+}
+
+.operator:active{
+    background-color: rgb(253, 190, 73);
+}
+
+
+.clear, .delete{
+    background-color: red;
+}
+
+.clear:active, .delete:active{
+    background-color: rgb(247, 92, 92);
+}
+
+.equals{
+    background-color: green;
+}
+
+.equals:active{
+    background-color: rgb(2, 190, 2);
+}
