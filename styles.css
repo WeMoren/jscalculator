@@ -15,7 +15,7 @@ body{
 }
 
 #calculator{
-    max-width: 400px;
+    width: 294px;
     display: grid;
     align-items: center;
     justify-content:center;
@@ -26,9 +26,7 @@ body{
 }
 
 #display{
-    height:100%;
-    overflow: hidden;
-    height: 64px;
+    width:100% ;
     border: none;
     border-radius: 6px 6px 0px 0px;
     padding: 20px;
@@ -51,7 +49,7 @@ button{
     width: 60px;
     height: 40px;
     border: none;
-    border-radius:  50px;
+    border-radius:50px !important;
     background-color: rgb(70, 68, 68);
     color: #fff;
     font-size: 16px;
