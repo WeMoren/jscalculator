@@ -6,12 +6,13 @@
 
 body{
     
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    display:flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100vh !important;
+    width: 100vw;
     background-color: hsl(0, 0%, 50%);
-    overflow-x: ;
+    
 }
 
 #calculator{
@@ -86,3 +87,54 @@ button:active{
 .equals:active{
     background-color: rgb(2, 190, 2);
 }
+
+@media(max-width:640px){
+    #calculator{
+        width:100vw;
+        height:100vh;
+    }
+
+    #display{
+        height: 100%;
+        width: 100vw;
+        font-size: 2.5rem;
+    }
+
+     button{
+        width: 90px;
+        height: 67px;
+        font-size: 1.5rem;
+    }
+
+    .buttons{
+        display:grid;
+        gap: 20px;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+      }
+}
+
+@media(max-width:420px){
+    .buttons{
+      display:grid;
+      gap: 28px;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button{
+        width: 67px;
+        height: 50px;
+        
+    }
+}
+
+@media(max-width:){
+    button{
+        /* width:16px; */
+        height: 16px;
+    }
+}
+
